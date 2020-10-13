@@ -1,0 +1,50 @@
+﻿<Window x:Class="Lab2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid RenderTransformOrigin="0.5,0.395" Background="Black">
+        <Grid.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform/>
+                <RotateTransform Angle="-0.333"/>
+                <TranslateTransform X="-0.265" Y="0"/>
+            </TransformGroup>
+        </Grid.RenderTransform>
+        <Border BorderThickness="1" BorderBrush="#FF9B9B9B" Margin="273,258,284,36"/>
+
+
+        <Border BorderThickness="1" BorderBrush="#FF9B9B9B" Margin="23,86,534,36"/>
+        <Border BorderThickness="1" BorderBrush="#FF9B9B9B" Margin="534,86,23,36"/>
+
+
+        <Label Content="Flight Database" HorizontalAlignment="Left" Height="82" Margin="175,8,0,0" VerticalAlignment="Top" Width="459" FontSize="48" FontFamily="OCR A Extended" RenderTransformOrigin="0.476,0.481" Foreground="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Button Content="Create&#xA;Flight" RenderTransformOrigin="0.499,0.524" Margin="0,327,654,47" Click="Button_Click_1" HorizontalContentAlignment="Center" FontSize="14" FontFamily="Arial Black" HorizontalAlignment="Right" Width="100"/>
+        <Button Content="Update&#xA;Flight" RenderTransformOrigin="0.499,0.524" Margin="0,327,543,47" Click="Button_Click_4" HorizontalContentAlignment="Center" FontSize="14" FontFamily="Arial Black" HorizontalAlignment="Right" Width="100"/>
+        <Button x:Name="DisplayFlights1" Content="Display&#xA;Flights" RenderTransformOrigin="0.499,0.524" Margin="0,325,85,49" Click="Button_Click_2" HorizontalContentAlignment="Center" FontSize="14" FontFamily="Arial Black" HorizontalAlignment="Right" Width="100"/>
+        <Button Content="Delete&#xA;Flight" RenderTransformOrigin="0.499,0.524" Margin="0,326,352,47" Click="Button_Click_3" HorizontalContentAlignment="Center" FontSize="14" FontFamily="Arial Black" HorizontalAlignment="Right" Width="100" VerticalContentAlignment="Center"/>
+        <Button Content="Exit program" RenderTransformOrigin="0.5,0.5" Margin="687,11,22,365" Click="Button_Click"/>
+        <Label Content="      Origin:&#xA;" Margin="31,94,620,257" FontWeight="Bold" AutomationProperties.IsRowHeader="True" Foreground="White"/>
+        <TextBox x:Name="OriginTB" Text="" TextWrapping="Wrap" Margin="99,96,582,284" TextChanged="TextBox_TextChanged" BorderThickness="2,2,2,2" FontSize="18"/>
+        <Label Content="Destination:&#xA;" Margin="29,152,618,202" FontWeight="Bold" Foreground="White"/>
+        <TextBox x:Name="DestinationTB" Text="" TextWrapping="Wrap" Margin="108,154,582,226" TextChanged="TextBox_TextChanged" BorderThickness="2,2,2,2" FontSize="18"/>
+        <Label Content="Flight ID:" Margin="29,208,637,145" FontWeight="Bold" Foreground="White"/>
+        <TextBox x:Name="IDTB" Text="" TextWrapping="Wrap" Margin="89,210,582,170" TextChanged="TextBox_TextChanged" BorderThickness="2,2,2,2" FontSize="18"/>
+        <Label Content="# of passengers:" Margin="29,274,604,88" FontWeight="Bold" Foreground="White"/>
+        <TextBox x:Name="paxTB" Text="" TextWrapping="Wrap" Margin="128,276,582,104" TextChanged="TextBox_TextChanged" BorderThickness="2,2,2,2" FontSize="18"/>
+        <Label Content="Flight ID:" Margin="275,265,352,87" FontWeight="Bold" Foreground="White"/>
+        <TextBox x:Name="DeleteTB" Text="" TextWrapping="Wrap" Margin="336,268,335,112" TextChanged="TextBox_TextChanged" BorderThickness="2,2,2,2"/>
+        <TextBox x:Name="DisplayTB" Text="" TextWrapping="Wrap" Margin="577,105,60,97" BorderThickness="4,4,4,4"/>
+        <Label Content=" (4 letters)" Margin="37,110,664,275" FontWeight="Normal" AutomationProperties.IsRowHeader="True" Foreground="#FFC9C9C9"/>
+        <Label Content=" (4 letters)" Margin="45,167,656,217" FontWeight="Normal" AutomationProperties.IsRowHeader="True" Foreground="#FFC9C9C9"/>
+        <Label Content=" (3 letter airline code + 3 digit number)" Margin="25,239,539,145" FontWeight="Normal" AutomationProperties.IsRowHeader="True" Foreground="#FFC9C9C9"/>
+        <Label Content=" (3 letter airline code + 3 digit number)" Margin="271,297,293,86" FontWeight="Normal" AutomationProperties.IsRowHeader="True" Foreground="#FFC9C9C9"/>
+        <Image Margin="318,103,317,181" Stretch="Fill" Source="https://forums.x-plane.org/screenshots/monthly_2020_05/1009697876_LogoRFDfondnoir-50.thumb.png.3fae00d6b0a9c81f6b9f629d31fc52ce.png"/>
+
+
+    </Grid>
+</Window>
